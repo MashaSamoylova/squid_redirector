@@ -1,12 +1,12 @@
 # Squid Url Rewriter
 >Перезапись запросов на заданные сайты
 
-#Установка Squid:
+## Установка Squid:
 ```
 apt-get install squid
 ```
 
-# Настройка
+## Настройка
 - скопируйте `redirector.py` в директорию конфигураци squid
 ```
 cp redirector.py /etc/squid/
@@ -18,6 +18,6 @@ cp redirector.py /etc/squid/
   url_rewrite_program /etc/squid/redirector.py /etc/squid/config.json
   ```
 
-# Дополнительная документация
+## Дополнительная документация
   http://wiki.squid-cache.org/Features/Redirectors
   http://www.squid-cache.org/Doc/config/url_rewrite_program

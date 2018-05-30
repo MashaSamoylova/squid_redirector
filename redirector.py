@@ -2,6 +2,9 @@
 import os
 import sys
 import json
+import syslog
+
+from datetime import datetime
 
 def modify_url(line, config_file):
     with open(config_file) as f:
@@ -12,7 +15,9 @@ def modify_url(line, config_file):
 
     for url in redirect_urls:
         if url in old_url:
-            return "http://" + config[url] + "\n"
+            new_url = "http://" + config[url] + "\n"
+            syslog.syslog(old_url + " -> " + new_url)
+            return new_url
     return "\n"
 
 def main():

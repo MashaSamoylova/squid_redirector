@@ -4,8 +4,6 @@ import sys
 import json
 import syslog
 
-from datetime import datetime
-
 def modify_url(line, config_file):
     with open(config_file) as f:
         config = json.load(f)

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-import os
 import sys
 import json
 import syslog
+
 
 def modify_url(line, config_file):
     with open(config_file) as f:
@@ -18,6 +18,7 @@ def modify_url(line, config_file):
             return new_url
     return "\n"
 
+
 def main():
     config_file = sys.argv[1]
     while True:
@@ -25,6 +26,7 @@ def main():
         new_url = modify_url(line, config_file)
         sys.stdout.write(new_url)
         sys.stdout.flush()
+
 
 if __name__ == "__main__":
     main()

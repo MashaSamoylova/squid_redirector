@@ -19,5 +19,5 @@ cp redirector.py /etc/squid/
   ```
 
 ## Дополнительная документация
-  http://wiki.squid-cache.org/Features/Redirectors
-  http://www.squid-cache.org/Doc/config/url_rewrite_program
+  - http://wiki.squid-cache.org/Features/Redirectors
+  - http://www.squid-cache.org/Doc/config/url_rewrite_program

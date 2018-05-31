@@ -2,15 +2,15 @@
 >Перезапись запросов на заданные сайты
 
 ## Установка Squid:
-```
-apt-get install squid
-```
+  ```
+  apt-get install squid
+  ```
 
 ## Настройка
 - скопируйте `redirector.py` в директорию конфигураци squid
-```
-cp redirector.py /etc/squid/
-```
+  ```
+  cp redirector.py /etc/squid/
+  ```
 - создайте файл с правилами перенаправлений в `/etc/squid/config.json`. Пример `config.json`
 - добавьте конфигураци для squid в `/etc/squid/squid.conf`:
 

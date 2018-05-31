@@ -18,6 +18,10 @@ cp redirector.py /etc/squid/
   url_rewrite_children 3 
   url_rewrite_program /etc/squid/redirector.py /etc/squid/config.json
   ```
+- перезапустите squid
+  ```
+  systemctl restart squid
+  ```
 
 ## Дополнительная документация
   - http://wiki.squid-cache.org/Features/Redirectors
